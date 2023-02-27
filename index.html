@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles css -->
+    <link rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- javascript -->
+    <script defer src="js/script.js"></script>
+
+    <title>Calculadora</title>
+
+</head>
+<body>
+    <div id="calculadora" class="">
+        <h1 class="titulo-calculadora">Calculadora</h1>
+        <p id="resultado"></p>
+        <table class="teclado-cal">
+            <tr>
+                <td>
+                    <button class="btn-laranja" onclick="limpar()">
+                        AC
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja" onclick="voltar()">
+                        C
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja" onclick="insert('%')">
+                        %
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja" onclick="insert('/')">
+                        /
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="insert('7')">
+                        7
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('8')">
+                        8
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('9')">
+                        9
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja" onclick="insert('*')">
+                        X
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="insert('4')">
+                        4
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('5')">
+                        5
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('6')">
+                        6
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja" onclick="insert('-')">
+                        -
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="insert('1')">
+                        1
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('2')">
+                        2
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('3')">
+                        3
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja" onclick="insert('+')">
+                        +
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button style="width: 106px; border-radius: 8%;" onclick="insert('0')">
+                        0
+                    </button>
+                </td>
+                <td>
+                    <button onclick="insert('.')">
+                        ,
+                    </button>
+                </td>
+                <td>
+                    <button class="btn-laranja-circle" onclick="calcular()">
+                        =
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="estilos">
+        <button class="vermelho" onclick="activeR()">R</button>
+        <button class="verde" onclick="activeG()">G</button>
+        <button class="azul" onclick="activeB()">B</button>
+        <button class="padrao" onclick="activeA()">A</button>
+    </div>
+    
+</body>
+</html>

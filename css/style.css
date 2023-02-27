@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    font-family: 'Oswald', sans-serif; margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --pretoFosco:rgba(0, 0, 0, 0.7);
+    --preto:#000;
+    --branco:#fff;
+    --laranja:#ff5d00;
+}
+body{
+    background-image: linear-gradient(45deg,#00c4cc, #7c2ae8);
+    height: 100vh;
+    width: 100%;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+#calculadora{
+    background-color: var(--pretoFosco);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 10px 45px var(--preto);
+    border: 1px solid var(--laranja);
+    transition: 1s;
+}
+h1{
+    text-align: center;
+}
+
+#resultado{
+    width: 90%;
+    height: 30px;
+    margin: 5px auto;
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 20px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+button{
+    background-color: transparent;
+    color: var(--branco);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+button:hover{
+    background-color: rgba(145, 145, 145, 0.1);
+}
+.btn-laranja{
+    color: var(--laranja);
+}
+.btn-laranja-circle{
+    border: 1px solid var(--laranja);
+    transition: .5s;
+}
+.btn-laranja-circle:hover{
+    background-color: var(--laranja);
+}
+
+
+.estilos{
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.estilos > button{
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--branco);
+}
+
+.vermelho{
+    background-color: rgb(255, 0, 0);
+}
+.vermelho:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(85, 0, 0);
+}
+.verde{
+    background-color: rgb(0, 255, 0);
+}
+.verde:hover{
+    color: rgb(0, 255, 0);
+    background-color: rgb(0, 85, 0);
+}
+.azul{
+    background-color: rgb(0, 0, 255);
+}
+.azul:hover{
+    color: rgb(0, 195, 255);
+    background-color: rgb(0, 0, 85);
+}
+.padrao{
+    background-color: var(--pretoFosco);
+}
+.padrao:hover{
+    color: var(--preto);
+    background-color: #fff;
+    border: 1px solid var(--preto);
+}
+
+.activeR{
+    --laranja: rgb(255, 0, 0);
+}
+.activeG{
+    --laranja: rgb(0, 255, 0);
+}
+.activeB{
+    --laranja: rgb(0, 195, 255);
+    
+    border: 1px solid rgb(0, 195, 255);
+}
+.activeA{
+    --laranja: #ff5d00;
+}
+
+@media (max-width: 500px) {
+    body{
+        flex-direction: column;
+    }
+    .estilos{
+        flex-direction: row;
+    }
+}
