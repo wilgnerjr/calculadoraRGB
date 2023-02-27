@@ -27,6 +27,7 @@ body{
     transition: 1s;
 }
 h1{
+    color: var(--laranja);
     text-align: center;
 }
 
